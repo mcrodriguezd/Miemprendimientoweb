@@ -1,0 +1,16 @@
+.input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+  
+    &::placeholder {
+      font-family: $poppins;
+    }
+  
+    &:focus {
+      background: $tangerine;
+      outline: none;
+    }
+  }
+  

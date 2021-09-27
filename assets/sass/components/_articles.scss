@@ -1,0 +1,28 @@
+.article {
+    border: 1px dotted $sable;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+  
+    &__title {
+      font-size: $large;
+      padding: 0.4rem 0;
+    }
+  
+    &__text {
+      text-align: justify;
+    }
+  
+    &__instructor {
+      padding: 0.4rem 0;
+    }
+  
+    &__social span {
+      font-size: $small;
+      margin-right: 0.6rem;
+    }
+  }
+  

@@ -1,0 +1,111 @@
+.main {
+   
+    padding: 0.5rem;
+  
+    &__left {
+      margin-bottom: 1rem;
+      border: 2px solid ;
+    }
+  
+    &__right {
+      border: 2px solid ;
+    }
+  
+    &__content {
+      padding: 1rem;
+      display: grid;
+      justify-items: center;
+    }
+  
+    &__img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 2px solid;
+      margin-bottom: 0.7rem;
+    }
+  
+    &__title {
+      text-transform: uppercase;
+    }
+  
+    & ul {
+      list-style: circle;
+      list-style-position: inside;
+    }
+  
+    &__social {
+      padding: 0.7rem;
+  
+      i {
+        margin: 0 0.5rem;
+      }
+    }
+  
+    &__text {
+      text-align: justify;
+    }
+  
+    &__box {
+      background: #808080;
+      color: $white;
+      width: 100%;
+      text-align: center;
+      padding: 0.2rem 0;
+      margin: 0.6rem 0;
+    }
+  
+    &__courses {
+      justify-self: flex-start;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  #svg-animation {
+    position: relative;
+  }
+  
+  #code-animation {
+    animation-name: code-animation;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+  
+  @keyframes code-animation {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(150px);
+    }
+  }
+  
+  #whell-animation {
+    position: absolute;
+    animation-name: whell-animation;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: 79% 80%;
+  }
+  
+  @keyframes whell-animation {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .main {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 1rem;
+  
+      &__left {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
